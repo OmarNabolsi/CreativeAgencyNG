@@ -82,6 +82,11 @@
   margin-right: 40px;
 }
 
+.contact-info .info-box .details {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-info .info-box .details h4 {
   color: var(--secondary-color);
 }
