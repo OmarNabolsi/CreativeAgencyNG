@@ -1,11 +1,11 @@
 <div class="logo">Creative Agency</div>
-<div class="toggle"></div>
-<div class="navigation">
+<div class="toggle" [ngClass]="{active: navOpened}" (click)="onToggle()"></div>
+<div class="navigation" [ngClass]="{active: navOpened}">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a [routerLink]="['/']" (click)="onToggle()">Home</a></li>
+    <li><a [routerLink]="['/services']" (click)="onToggle()">Services</a></li>
+    <li><a [routerLink]="['/work']" (click)="onToggle()">Work</a></li>
+    <li><a [routerLink]="['/contact']" (click)="onToggle()">Contact</a></li>
   </ul>
   <div class="social-bar">
     <ul>
