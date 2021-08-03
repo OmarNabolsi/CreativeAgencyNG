@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/CreativeAgency",
             "baseHref": "./",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -63,7 +63,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "baseHref": "/",
+            "baseHref": "./",
             "browserTarget": "CreativeAgencyNG:build"
           },
           "configurations": {
